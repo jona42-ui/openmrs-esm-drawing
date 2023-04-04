@@ -23,7 +23,10 @@ function setupOpenMRS() {
   return {
     pages: [
       {
-        load: getAsyncLifecycle(() => import("./drawing"), options),
+        load: getAsyncLifecycle(
+          () => import("./components/drawingCanvas/drawingCanvas.component"),
+          options
+        ),
         route: "drawing",
       },
     ],

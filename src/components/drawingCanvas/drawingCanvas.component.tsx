@@ -14,6 +14,7 @@ const DrawingCanvas = () => {
     if (canvas) {
       const svgData = canvas.toSVG();
       // Serialize the drawing data and save it to the server
+      // eslint-disable-next-line no-console
       console.log("Serialized SVG data: ", svgData);
     }
   };
@@ -81,7 +82,7 @@ const DrawingCanvas = () => {
             labelText="Patient"
             onChange={handlePatientChange}
             value={patient}
-            defaultText="Select a patient"
+            helperText="Select a patient"
             className="drawing-canvas-select"
           >
             <option value="1">Patient 1</option>

@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { drawOnBody } from "./drawingCanvas";
 
-const Drawing: React.FC = () => {
+export const Drawing: React.FC = () => {
   React.useEffect(() => {
     drawOnBody();
   }, []);

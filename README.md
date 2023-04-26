@@ -21,7 +21,7 @@ should open with the OpenMRS 3 application. Log in and then navigate to
 
 ## Adapting the code
 
-1.
+
 
 ## Integrating it into your application
 
